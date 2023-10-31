@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 class='title'>Products list</h1>
+
+<div class='page-bk center'>
+    {% for plant in plants %}
+        <a href="{% url 'plant-detail' plant.id %}" class='title-button'>{{ plant.title }}</a>
+    {% endfor %}
+</div>
+
+{% endblock %}

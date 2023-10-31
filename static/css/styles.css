@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-image: url('/static/images/bg_shop.jpg');
+    background-size: cover;
+}
+
+.navbar {
+    background-color: rgba(104, 179, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: rgba(194, 237, 0, 0.5);
+    color: rgb(18, 62, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+}
+
+.navbar-button:hover {
+    background-color: rgb(43, 93, 0);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.align-left {
+
+    margin-left: 50 px;
+}
+
+.align-right {
+    margin-right: 50 px;
+}
+
+.title {
+    text-align: center;
+    color: rgb(21, 114, 0);
+}
+
+.center {
+    text-align: center;
+}
+
+.page-bk {
+    background-color: rgba(104, 179, 0, 0.3);
+    width: 800px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.form label {
+    display: block;
+    padding: 5px;
+    margin: 5px;
+    color: rgb(27, 70, 0);
+}
+
+.form input {
+    margin: 5px;
+    padding: 5px;
+    width: 50%;
+    border-radius: 10px;
+    background-color: rgba(255, 226, 11, 0.3);
+    color: rgb(0, 67, 20);
+    text-align: center;
+}
+
+.form textarea {
+    background-color: rgb(255, 226, 11, 0.3);
+    color: rgb(0, 28, 93);
+    border-radius: 10px;
+}
+
+.title-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgba(194, 237, 0, 0.5);
+    color: rgb(18, 62, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 500px;
+    text-align: center;
+
+}

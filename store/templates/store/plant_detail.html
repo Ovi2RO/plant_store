@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1 class='title'>{{ plant.title }}</h1>
+
+    <div class='page-bk center'>
+        <br>
+        <p>{{ plant.description }}</p>
+        <p><strong> €{{ plant.price }}</strong></p>
+        <br>
+        {% if user.is_staff %}
+            <div class="text-center">
+                <a href="{% url 'plant-edit' plant.pk %}" class='navbar-button'>Edit</a>
+                <a href="{% url 'plant-delete' plant.pk %}" class='navbar-button'>Delete</a>
+            </div>
+        {% endif %}
+    </div>
+
+{% endblock %}
+
+
+
+
+
+

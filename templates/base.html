@@ -1,0 +1,31 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+<nav class="navbar">
+  <div class="align-left">
+    {% if user.is_authenticated %}
+      <a class="navbar-button" href="{% url 'home' %}">Home</a>
+      <a class="navbar-button" href="{% url 'plant-list' %}">List</a>
+      {% if user.is_staff %}
+        <a class="navbar-button" href="{% url 'plant-create' %}">Add</a>
+      {% endif %}
+    {% endif %}
+  </div>
+
+  {% if user.is_authenticated %}
+    <div class="align-right">
+      <a>Hello <strong>{{ user.username }}</strong></a>
+      <a class="navbar-button" href="{% url 'logout' %}">LogOut</a>
+    </div>
+  {% else %}
+    <div class="align-right">
+      <a class="navbar-button" href="{% url 'login' %}">Log In</a>
+      <a class="navbar-button" href="{% url 'signup' %}">Sign Up</a>
+    </div>
+  {% endif %}
+
+  
+</nav>
+
+{% block content %}
+
+{% endblock  %}

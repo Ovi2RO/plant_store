@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1 class='title'>Delete plant</h1>
+
+    <div class="page-bk">
+        <p>Are you sure you want to delete this plant?</p>
+        <p>Title: {{ plant.title }}</p>
+        <p>Description: {{ plant.description }}</p>
+        <p>Price: €{{ plant.price }}</p>
+
+        <form method="post" class='form'>{% csrf_token %}
+            <button type="submit" class='navbar-button'>Confirm</button>
+            <button type="button" class="navbar-button" onclick="window.location.href='{% url 'plant-detail' plant.pk %}'">Cancel</button>
+        </form>
+    </div>
+
+{% endblock %}
+
+
+
+

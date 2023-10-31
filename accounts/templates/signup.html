@@ -1,0 +1,20 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+    <div class='page-bk title'>
+        <h1>Sign UP</h1>
+        <br>
+        <form action='' method="post" class='form'> {% csrf_token %}
+            {{ form.as_p }}
+            <br>
+            <button type="submit" class='navbar-button'>Sign UP</button>
+        </form>
+        <br>
+    </div>
+
+{% endblock %}
+
+
+
+
